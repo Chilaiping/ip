@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 class Global {
-    static String PATTERNLINE = "__________________________________________________________________________";
+    static String PATTERNLINE = "___________________________________________________________________________";
 }
 
 enum Action {
@@ -15,7 +15,7 @@ enum Action {
 
 public class Duke {
 
-    public static void main(String[] args) throws DukeException {
+    public static void main(String[] args) {
 
         ArrayList<Task> tasks = new ArrayList<>();
 
