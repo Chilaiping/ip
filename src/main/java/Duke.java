@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 class Global {
-    static String PATTERNLINE = "____________________________________________________________________________";
+    static String PATTERNLINE = "__________________________________________________________________________";
 }
 
 enum Action {
@@ -11,7 +11,6 @@ enum Action {
     AddTodo,
     AddDeadlines,
     AddEvents,
-    Invalid,
 }
 
 public class Duke {
@@ -60,10 +59,10 @@ public class Duke {
             System.out.println(farewell);
         }
     }
-    private static void processInput(String input, ArrayList<Task> tasks) throws DukeException {
+    private static void processInput(String input, ArrayList<Task> tasks){
 
         String command = input.toLowerCase();
-        Action action;// = Action.Invalid;
+        Action action;
         int count = tasks.size();
 
         try {
